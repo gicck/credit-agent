@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-Local Market
-============
 
 Local Market is an open source app powered by Meteor and made by [Percolate Studio](http://percolatestudio.com). In this example app we explore intermediate techniques:
 
@@ -35,4 +32,3 @@ By default, Local Market comes configured with credentials for a shared Twitter 
 3. Now you can run or deploy your copy of Local Market with the `--settings path/to/settings.json` option.
 =======
 # credit-agent
->>>>>>> 77c0142f79484afd1f06f09f5a2150186f69eab7
