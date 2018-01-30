@@ -1,12 +1,28 @@
 <template name="authOverlay">
   <div class="overlay auth">
-    <a href="#" class="js-close-overlay overlay-dismiss"><span class="icon-cross"></span></a>
+    <a href="#" class="js-close-overlay overlay-dismiss">
+      <span class="icon-cross"></span>
+    </a>
 
     <div class="wrapper-heading">
-      <div class="title-overlay">Sign In</div>
-      <div class="subtitle-overlay">To bookmark and share your favorite recipes</div>
+    <div class="title-overlay">Registro</div>
+    <div class="subtitle-overlay">Guarda y gestiona tus clientes</div>
+    <form class="register">
+        <p>Email:
+          <input type="email" name="email">
+        </p>
+        <p>Password:
+          <input type="password" name="password">
+        </p>
+      </form>
     </div>
+    <input class="js-signin btn-twitter" type="submit" value="Ingresa">
+    
 
-    <button class="js-signin btn-twitter">Sign In With Twitter</button>
+    <!-- <button class="js-signin btn-twitter">Sign In With Twitter</button> -->
   </div>
 </template>
+
+<!-- <template name="register">
+  
+</template> -->

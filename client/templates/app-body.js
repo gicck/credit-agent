@@ -168,5 +168,12 @@ Template.appBody.events({
       this.callback();
       notifications.remove(this._id);
     }
-  }
+  },
+
+  'click .logout': function(event){
+    event.preventDefault();
+    Meteor.logout();
+    
+    Overlay.open('authOverlay');
+    } 
 });

@@ -4,15 +4,28 @@
 //
 // We have to use an autorun for this as callbacks get lost in the
 //   redirect flow.
-Template.authOverlay.onCreated(function() {
-  this.autorun(function() {
+Template.authOverlay.onCreated(function (){
+  this.autorun(function () {
     if (Meteor.userId() && Overlay.template() === 'authOverlay')
       Overlay.close();
   });
 });
 
 Template.authOverlay.events({
-  'click .js-signin': function() {
-    Meteor.loginWithTwitter({loginStyle: 'redirect'});
+  'click .js-signin': function (){
+    debugger
+    event.preventDefault();
+    var email = $('[name=email]').val();
+    var password = $('[name=password]').val();
+    Accounts.createUser({
+      email: email,
+      password: password
+    }, function(error) {
+      if (error) {
+        console.log(error.reason); // Output error if registration fails
+      } else {
+        Router.go("/"); // Redirect user if registration succeeds
+      };
+    });
   }
 });

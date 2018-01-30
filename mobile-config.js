@@ -1,9 +1,9 @@
 App.info({
-  name: 'Local Market',
-  description: 'A recipe sharing app made in Meteor.',
-  author: 'Percolate Studio Team',
-  email: 'us@percolatestudio.com',
-  website: 'http://percolatestudio.com',
+  name: 'Credit Agent',
+  description: 'Recolector de datos de clientes para agentes de credito.',
+  author: '',
+  email: '',
+  website: '',
   version: '0.0.1'
 });
 

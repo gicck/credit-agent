@@ -1,6 +1,6 @@
 <template name="bookmarks">
   <div class="page bookmarks">
-    {{> nav title='Your Bookmarks' subtext=recipeCount}}
+    {{> nav title='Tus Clientes' subtext=recipeCount}}
 
     <div class="content-scrollable">
       <div class="list-recipes">
@@ -8,8 +8,8 @@
           {{> recipeItem recipe=this size='large'}}
         {{else}}
           <div class="wrapper-message">
-            <div class="title-message">No bookmarks yet</div>
-            <div class="subtitle-message">Tap <span class="icon-bookmark-hollow"></span> to bookmark your favorite recipes. <a href="{{pathFor 'home'}}">Return home</a></div>
+            <div class="title-message">No existen clientes aun</div>
+            <div class="subtitle-message">Haz clic aca para registrar clientes <a href="{{pathFor 'home'}}">Inicio</a></div>
 
           </div>
         {{/each}}
