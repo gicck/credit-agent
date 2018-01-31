@@ -1,5 +1,6 @@
 Template.recipeItem.helpers({
   path: function () {
+    debugger
     return Router.path('recipe', this.recipe);
   },
   

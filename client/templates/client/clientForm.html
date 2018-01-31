@@ -1,0 +1,28 @@
+<template name="clientForm">
+    <div class="page bookmarks">
+        {{> nav title='Nuevo Cliente' subtext=recipeCount}}
+        <div class="content-scrollable">
+            <div class="item-recipe">
+
+                <h1 class="title-admin">Registar cliente</h1>
+                <form>
+                    <label>Ingresa los datos de los clientes:</label>
+                    <textarea name="code" rows="1" placeholder="CODIGO DE SOLICITUD..."></textarea>
+                    Ingresa la fecha de registro:
+                    <input name="date" type="date"><br>
+                    Datos del solicitante:
+                    <textarea name="nameClient" rows="1" placeholder="NOMBRE..."></textarea>
+                    <textarea name="ci" rows="1" placeholder="CARNET DE IDENTIDAD..."></textarea>
+                    <textarea name="address" rows="1" placeholder="DIRECCION..."></textarea>
+                    <textarea name="tel" rows="1" placeholder="TELEFONOS DE CONTACTO..."></textarea>
+                    <textarea name="ref" rows="2" placeholder="REFERENCIAS ADICIONALES..."></textarea>
+                    Realizado por: {{email}} <br>
+                    Agencia: Simon Lopez <br>
+                    Sucursal: Cochabamba <br>
+                    <button type="submit" class="btn-primary">Save</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</template>

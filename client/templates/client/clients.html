@@ -1,0 +1,18 @@
+<template name="clients">
+        <div class="page recipes">
+          {{> nav title='Clientes' black=true}}
+      
+          <div class="content-scrollable">
+            <div class="list-recipes">
+              {{#each this}}
+                {{#if highlighted}}
+                  {{> clientItem client=this size='large'}}
+                {{else}}
+                  {{> clientItem client=this size='small'}}
+                {{/if}}
+              {{/each}}
+            </div>
+          </div>
+      
+        </div>
+      </template>

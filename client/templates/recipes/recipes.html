@@ -5,11 +5,7 @@
     <div class="content-scrollable">
       <div class="list-recipes">
         {{#each this}}
-          {{#if highlighted}}
-            {{> recipeItem recipe=this size='large'}}
-          {{else}}
-            {{> recipeItem recipe=this size='small'}}
-          {{/if}}
+          {{> recipeItem recipe=this size='large'}}
         {{/each}}
       </div>
     </div>
